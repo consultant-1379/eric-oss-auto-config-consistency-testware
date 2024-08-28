@@ -1,0 +1,31 @@
+replicaCount: 1
+
+images:
+  testwareImage: ${defaultDockerTag}
+
+build:
+  version: ${version}
+  name: ${name}
+
+env:
+  APP_NAME: "eric-oss-auto-config-consistency"
+  APP_VERSION: ${version}
+  PRODUCT: "eric-oss-auto-config-consistency"
+  PRODUCT_VERSION: ""
+  TESTWARE_NAME: ${name}
+  TEST_VERSION: ${version}
+  BUILD_URL: ""
+  STAGING_TYPE: "PRODUCT"
+  ENVIRONMENT: "development"
+  GAS_URL: ""
+  ADDITIONAL_ARGS: "--insecure-skip-tls-verify --quiet --http-debug=full --verbose"
+  EACC_PREFIX: "/eacc"
+  SHUTDOWN_WAIT_TIME: 0
+  INGRESS_SCHEMA: "https"
+  INGRESS_HOST: ""
+  VALIDATE_EACC_RBAC: ""
+  INGRESS_LOGIN_USER: "gas-user"
+  INGRESS_LOGIN_PASSWORD: "idunEr!css0n"
+  RESTSIM_HOST: ""
+  RAPP_ID: ""
+  BUILD_ID: ""

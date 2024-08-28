@@ -1,0 +1,2 @@
+********* {{.Values.build.name}} Testware *********
+Testware {{.Values.build.name}} - {{.Values.build.version}} was deployed to {{ .Values.env.DEPLOYMENT_NAME }}.

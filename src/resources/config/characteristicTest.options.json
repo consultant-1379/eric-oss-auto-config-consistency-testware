@@ -1,0 +1,51 @@
+{
+  "summaryTrendStats": ["avg", "min", "med", "max", "p(95)", "p(99)", "p(90)", "count"],
+  "hosts": {
+    "issue-report.ericsson.se": "127.0.0.1:3005"
+  },
+  "thresholds": {
+    "checks": ["rate == 1.0"]
+  },
+  "scenarios": {
+    "post_instantiation_procedure": {
+      "exec": "postInstantiationProceduresScenario",
+      "executor": "per-vu-iterations",
+      "vus": 1,
+      "iterations": 1,
+      "maxDuration": "2m",
+      "startTime": "0s"
+    },
+    "scope_characteristic": {
+      "exec": "scopeCharacteristicScenario",
+      "executor": "per-vu-iterations",
+      "vus": 1,
+      "iterations": 1,
+      "maxDuration": "3m",
+      "startTime": "2m"
+    },
+    "rule_characteristic": {
+      "exec": "ruleCharacteristicScenario",
+      "executor": "per-vu-iterations",
+      "vus": 1,
+      "iterations": 1,
+      "maxDuration": "2m",
+      "startTime": "5m"
+    },
+    "job_characteristic": {
+      "exec": "jobCharacteristicScenario",
+      "executor": "per-vu-iterations",
+      "vus": 1,
+      "iterations": 1,
+      "maxDuration": "2m",
+      "startTime": "7m"
+    },
+    "post_instantiation_characteristic": {
+      "exec": "postInstantiationCharacteristicScenario",
+      "executor": "per-vu-iterations",
+      "vus": 1,
+      "iterations": 1,
+      "maxDuration": "60m",
+      "startTime": "9m"
+    }
+  }
+}

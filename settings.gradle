@@ -1,0 +1,2 @@
+rootProject.name = 'eric-oss-auto-config-consistency-testware'
+gradle.ext.repoPrefix = "armdocker.rnd.ericsson.se/proj-eric-oss-drop"
